@@ -8,7 +8,7 @@
     fontsize: 10pt,          // https://typst.app/docs/reference/layout/length
     linespacing: 6pt,        // length
     sectionspacing: 0pt,     // length
-    showAddress:  true,      // https://typst.app/docs/reference/foundations/bool
+    showAddress:  false,      // https://typst.app/docs/reference/foundations/bool
     showNumber: true,        // bool
     showTitle: true,         // bool
     headingsmallcaps: false, // bool

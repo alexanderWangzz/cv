@@ -1,0 +1,407 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/jskherman/imprecv/main/cv.typ.schema.json
+
+personal:
+  name: 詹晔康
+  email: zhanyekang@foxmail.com
+  phone: (+86) 18271842976
+  url: https://github.com/YekangZhan
+  location:
+  #   city: Wuhan
+  #   region: HuBei
+  #   postalCode: 1234
+  #   country: China
+  profiles:
+    - network: GitHub
+      username: YekangZhan
+      url: //
+
+education:
+  - institution: 华中科技大学
+    url: https://wnlo.hust.edu.cn/
+    area: 存储系统，文件系统，I/O调度，新型存储器
+    studyType: 武汉国家光电研究中心 计算机系统结构 博士
+    startDate: 2021-09-01
+    endDate: Present
+    location: 湖北 武汉
+    grade: 'XXX'
+    honors:
+      - 华为奖学金 (2%)
+      - 校三好研究生 (5%)
+      - 科技创新奖学金 (5%)
+
+
+    courses:
+      # - 分布式系统(MIT 6.824)
+      # - 深度学习系统(CMU 10414)
+      # - 数据库系统(MIT 6.1810)
+      
+    highlights:
+      # - "*活动经历*: 科研助理, “数据智能”双创团队负责人, 《数据结构与算法设计》助教"
+  - institution: 华中农业大学
+    url: https://coi.hzau.edu.cn/
+    area: 
+    studyType: 信息学院 计算机科学与技术 本科
+    startDate: 2017-09-01
+    endDate: 2021-06-30
+    location: 湖北 武汉
+    grade: 'GPA: 3.9/4.0($2^"ed"$/132)'
+    honors:
+      - 保研排名 2/132 (1.5%)
+      - 校三好学生 (5%)
+      - 优秀共青团员 (5%)
+
+    courses:
+    #   - 数据结构与算法
+    #   # - 操作系统(MIT 6.1810)
+    #   - 操作系统
+    #   - 计算机网络
+    #   - 计算机组成原理
+    #   - 机器学习
+    onlineCourses: 
+    highlights:
+work:
+  # - organization: 腾讯科技(深圳)有限公司
+  #   url: https://www.tencentcloud.com/zh
+  #   location: 广东 深圳
+  #   positions:
+  #     - position: 云架构平台部 系统软件研发实习生
+  #       startDate: 2024-05-30
+  #       endDate: 2024-08-30
+  #       highlights:
+  #         - prefix: "*存储引擎研发*：实现"
+  #           url: https://spdk.io
+  #           short: SPDK
+  #           suffix: "的FTL模块支持通用NVMe SSD在host端自定义写分流以及垃圾回收策略的追加写引擎"
+  #         - prefix: "*分流及垃圾回收策略*: 实现的写分流及垃圾回收算法测试表明在zipfan:0.8分布下能将写放大从4.31降低至1.59"
+  #           url:
+  #           short:
+  #           suffix:
+  # - organization: 腾讯科技(深圳)有限公司
+  #   url: https://www.tencentcloud.com/zh
+  #   location: 广东 深圳
+  #   positions:
+  #     - position: 云架构平台部 系统软件研发实习生
+  #       startDate: 2022-01-18
+  #       endDate: 2022-05-13
+  #       highlights:
+  #         - prefix: "*智能资源调度*：对负载模型和访问模式聚类并进行时序预测，提出的智能调度策略在多个资源维度上至高提升20%利用率"
+  #           url: 
+  #           short: 
+  #           suffix: 
+  #         - prefix: "*优先级流控系统原型*：提出并实现了一种基于无锁队列的的流量控制算法，在带宽超限的情况下保证用户服务质量"
+  #           url:
+  #           short:
+  #           suffix:
+          
+  # - organization: 上海商汤智能科技有限公司
+  #   url: https://www.sensetime.com/cn
+  #   location: 上海
+  #   positions:
+  #     - position: 研究院 视觉算法实习生
+  #       startDate: 2021-07-22
+  #       endDate: 2021-11-08
+  #       highlights:
+  #         - prefix: "*ICCV挑战赛*：参与"
+  #           url: https://insightface.ai/mfr21
+  #           short: ICCV21-MFR
+  #           suffix: 竞赛，对上百万张图片数据做mixup增广，最终团队在MS1M Track上取得$1^"st"$
+  #         - prefix: "*轻量级模型部署*：以规范化框架复现小架构模型，进行知识蒸馏，完成量化并进行嵌入式设备实机部署测试"
+  #           url:
+  #           short:
+  #           suffix:
+affiliations:
+  - organization: White Hat Hackers Association
+    position: Vice President for Internal Affairs
+    location: Cambridge, United Kingdom
+    url: https://example.com
+    startDate: 2020-05-30
+    endDate: 2021-05-30
+    highlights:
+      - But I must explain to you how all this mistaken idea of reprobating pleasure and extolling pain arose.
+      - But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?
+      - Can you then suppose that those heroic men performed their famous deeds without any motive at all?
+  - organization: London Bridge Toastmasters Club
+    position: Member
+    location: City of London, United Kingdom
+    url:
+    startDate: 2022-06-15
+    endDate: 2023-06-30
+    highlights:
+      - Won Champion in the Division A District X Speech Evaluation Contest of Toastmasters International
+      - Promising Toastmaster of the Year (PY 2022-2023)
+      - Tell me, pray, what explanation do you put upon their actions?
+
+awards:
+  - title: "第五届中国大学生程序设计竞赛(*CCPC*)湘潭赛站"
+    date: 
+    rank: 银牌
+    url:
+    location: 
+    highlights:
+  - title: "第五届中国大学生程序设计竞赛(*CCPC*)秦皇岛站"
+    date: 
+    rank: 铜牌
+    url:
+    location:
+    highlights:
+  - title: "第四十五届国际大学生程序设计竞赛(*ICPC*)亚洲区域赛昆明赛区"
+    date: 
+    rank: 铜牌
+    url:
+    location:
+    highlights:
+  - title: "第十届蓝桥杯全国软件和信息技术专业人才大赛 C/C++A组 全国总决赛"
+    date: 
+    rank: 二等奖 (1.5%)
+    url:
+    location: 
+    highlights:
+  - title: "第九届蓝桥杯全国软件和信息技术专业人才大赛湖北赛区 C/C++ A组"
+    date: 
+    rank: 一等奖 (10%)
+    url:
+    location: 
+    highlights:
+  - title: "第十届蓝桥杯全国软件和信息技术专业人才大赛湖北赛区 C/C++ A组"
+    date: 
+    rank: 一等奖 (10%)
+    url:
+    location: 
+    highlights:
+  - title: "第八届ASC世界大学生超级计算机竞赛"
+    date: 
+    rank:  二等奖
+    url:
+    location: 
+    highlights:
+  
+
+
+certificates:
+  - name: "Learning How to Learn: Powerful mental tools to help you master tough subjects"
+    date: 2021-09-01
+    issuer: Coursera
+    url: https://example.com
+
+publications:
+  - name: "Rethinking the Request-to-IO Transformation Process of File Systems for Full Utilization of High-Bandwidth SSDs"
+    huanhang: N
+    url: https://www.usenix.org/conference/fast25/presentation/zhan
+    info: (高性能文件系统与异构存储,*华中科技大学文件系统方向第一篇顶会论文*)
+    publisher: "*FAST25, CCF-A, 一作*"
+  - name: "AIS: An Active Idleness I/O Scheduler to Reduce Bufer-Exhausted Degradation of Solid-State Drives"
+    huanhang: 
+    url: https://dl.acm.org/doi/10.1145/3708538
+    info: (I/O调度与固态硬盘性能优化)
+    publisher: "*TACO24, CCF-A, 一作*"
+  - name: "An Enhanced Buffered I/O with the Scrap Buffer Architecture Benefiting from High SSD Bandwidth\\"
+    huanhang: 
+    url:
+    info: (存储I/O栈优化与高性能存储)
+    publisher: "*FAST26, CCF-A, 在投*"
+  - name: "RomeFS: A CXL-SSD Aware File System Exploiting Synergy of Memory-Block Dual Paths"
+    huanhang: 
+    url: https://dl.acm.org/doi/10.1145/3698038.3698539
+    info: (CXL互连技术与新型文件系统,*首个基于CXL-SSD的文件系统*)
+    publisher: "*SoCC24, CCF-B, 一作*"
+  - name: "HBtree: A Heterogeneous B+ tree with Multi-granularity for Hybrid NVM-SSD Storage"
+    huanhang: 
+    url: https://ieeexplore.ieee.org/document/9925539
+    info: (高效索引结构与异构存储)
+    publisher: "*IEEE NAS22, 一作*"
+  - name: "SchInFS: A File System Integrating Functions of the Block I/O Scheduler for ZNS SSDs"
+    huanhang: 
+    url: https://ieeexplore.ieee.org/document/10818014
+    info: (ZNS-SSD与新型文件系统)
+    publisher: "*ICCD24, CCF-B*"
+  - name: "HeteroGNN: A Heterogeneous Stage Division Based GNN Training Framework to Maximize CPU-GPU Parallelism\\"
+    huanhang: 
+    url:
+    info: (GNN训练加速与细粒度任务调度)
+    publisher: "*ICME25, CCF-B*"
+  - name: "一种基于设备感知的请求划分的数据存储系统"
+    huanhang: 
+    url:
+    info: 
+    publisher: "*发明专利, 案卷号AJ2510226*"
+
+
+projects:
+  - name: "OrchFS: 利用异构的低延迟设备最大化高带宽SSD性能的高速文件系统 (国家重点研发计划No.2022YFB2804302)"
+    url: 
+    repo: #https://github.com/YekangZhan/OrchFS
+    highlights:
+      - prefix: "*存储栈I/O性能瓶颈识别*：结合理论与实验分析发现，现有存储系统难以充分利用高带宽SSD性能。其根本原因在于：1）昂贵的I/O对齐，2）高页缓存软件开销，3）不充足的I/O并发性。"
+        url: 
+        short: 
+        suffix:
+      - prefix: "*写请求划分*：设计了一种对齐优先且最小化碎片的运行时写请求划分机制，将任意模式的用户访问请求划分为适应底层异构存储设备（低延迟的辅助存储设备与高带宽的块存储设备）访问特性的多个子请求，从而让存储设备能够高效地处理这些访问请求，避免慢速的I/O对齐与页缓存。"
+        url: 
+        short: 
+        suffix:
+      - prefix: "*并行I/O引擎*：设计了一种新的文件系统并行I/O处理机制，解绑应用程序线程与设备I/O线程，透明地以一种主动并行的访问模式来实现辅助设备与SSD之间，以及SSD内部的并行访问。"
+        url: 
+        short: 
+        suffix:
+      - prefix: "*统一文件索引机制*：基于radix tree设计了一种新的高效文件数据索引结构，以一种隐式并行且缓存友好的方式快速定位分布在辅助设备和SSD之上的数据存储单元。"
+        url: 
+        short: 
+        suffix:
+      - prefix: "*实验效果*：比起SOTA 和相关的产品级文件系统，该文件系统实现了至多29.76 倍的写性能提升与6.79 倍的读性能提升。"
+        url: 
+        short: 
+        suffix: 
+      - prefix: "*开源成果*：文件系统核心代码量超17000行，已开源在https://github.com/YekangZhan/OrchFS。"
+        url:
+        short:
+        suffix:
+  - name: "RomeFS: 基于设备独特的双路访问特性提出了一种双路访问文件系统架构 (国家自然科学基金No.62172175)"
+    url: 
+    repo: 
+    highlights:
+      - prefix: "*协同的双路数据访问机制*：在文件系统中透明地主动利用CXL.mem路径去处理所有的元数据操作与事务性操作，使用CXL.mem和CXL.io路径去协同处理文件数据操作。"
+        url: 
+        short: 
+        suffix:
+      - prefix: "*并行文件数据索引机制*：使用B+tree去索引位于CXL.mem存储区域上离散而稀疏的数据日志，使用radix tree去索引位于CXL.io存储区域上地址连续且大块的数据块，并引入了一种自适应的并行数据查找机制实现了高效的数据定位。"
+        url: 
+        short: 
+        suffix: 
+      - prefix: "*数据去碎片机制*：引入merge-on-write技术和per-block data log writeback机制去减少文件系统数据碎片并实现灵活的CXL.mem存储区域空间释放。"
+        url: 
+        short: 
+        suffix: 
+      - prefix: "*实验效果*：比起SOTA和相关的产品级文件系统，该文件系统实现了至多14.24倍的性能提升。"
+        url:
+        short:
+        suffix:
+      - prefix: "*代码实现*：文件系统核心代码量超14000行。额外实现了一个约3000行的CXL-SSD模拟器，支持调整访问延迟，存储区域容量，以及数据下刷策略。"
+        url:
+        short:
+        suffix:
+
+  - name: "Scrap Buffer：利用高带宽存储性能去强化buffered I/O访问模式性能 (国家重点研发计划No.2024YFB4505105)"
+    url: 
+    repo: 
+    highlights:
+      - prefix: "*Scrap Buffer主导的高效数据访问机制*：使用scrap buffer和高带宽SSD去协作处理用户写请求，使用scrap buffer和page cache去协作处理用户读请求，并实现了低成本的数据一致性维护。"
+        url: 
+        short: 
+        suffix:
+      - prefix: "*高可扩展性的两阶段Scrap Buffer Flushing*：在第一阶段执行大型读取去填充scrap-buffer页面，在第二阶段执行大型写入去将scrap-buffer页面写回SSD，并实现了基于SSD带宽感知的高可扩展性的阶段间并行和阶段内并行。"
+        url: 
+        short: 
+        suffix: 
+      - prefix: "*细粒度的Scrap Buffer锁机制*：针对传统page cache中自由页插入，干净页删除，和脏页状态维护等操作导致的高锁竞争开销问题，引入了一种可扩展的细粒度锁机制，显著减少了锁开销。"
+        url: 
+        short: 
+        suffix: 
+      - prefix: "*实验效果*：比起 SOTA和相关的产品级文件系统，该文件系统在4KB小I/O上实现了至多82.80倍的性能提升；在4MB的大I/O上实现了至多3.89倍的性能提升, 并节省了91.1%的内存使用。在高内存压力下，实现了至多2.16倍的性能提升。"
+        url:
+        short:
+        suffix:
+      - prefix: "*代码实现*：Scrap Buffer Architecture被实现在Linux kernel 6.8的XFS中，核心代码量超5000行，计划开源。"
+        url:
+        short:
+        suffix:
+      # - prefix: 在此期间熟悉了Linux 内核文件系统开发与性能调优，了解了内核多线程与并发锁竞争。
+      #   url:
+      #   short:
+      #   suffix:
+      
+  - name: "AIS：一种最大化固态硬盘内部缓存恢复的主动空闲调度器 (国家自然科学基金No.61821003)"
+    url: 
+    repo: 
+    highlights:
+      - prefix: "*固态硬盘缓存耗尽性能降级模型*：分析了固态硬盘因内部缓存耗尽而导致的性能降级问题，并建立了缓存恢复模型。基于该模型实现了一个SSD特性提取工具，用于自动化提取模型参数。"
+        url: 
+        short: 
+        suffix:
+      - prefix: "*模型适用性*：经过测试验证，该模型可以很好地用于三星，西数和铠侠等主流SSD厂商的多款SSD。"
+        url: 
+        short: 
+        suffix: 
+      - prefix: "*主动空闲调度器*：在该模型的基础上设计了一个SSD性能降级预测器，并实现了一个块层调度器去通过预测器信息来动态调整SSD负载，从而缓解SSD性能降级问题。"
+        url: 
+        short: 
+        suffix:
+      - prefix: "*实验效果*：在真实世界的云存储trace 下，该调度器分别改善了SSD的平均I/O延迟、99th、99.9th、和99.99th尾延迟至多29.3%, 37.3%, 78.7%和67.2%。比起相关的SOTA调度器，该调度器提升了至多51.9%的应用程序性能。"
+        url:
+        short:
+        suffix:
+      # - prefix: 在此期间深入理解了SSD 的性能特性，并了解了主流厂商SSD 性能特性的具体差异。
+      #   url:
+      #   short:
+      #   suffix:
+
+  - name: "ZB级海量冷数据存储架构及高效存储管理系统（国家重点研发计划No.2024YFB4505105）"
+    url: 
+    repo: 
+    highlights: 
+      - prefix: "*批量文件归档机制*：针对大量小文件迁移时昂贵的小型随机元数据I/O问题，设计了并行批量文件归档机制，绕过慢速的标准POSIX串行接口，引入一种并行访问接口来批量扫描元数据和文件数据，再执行批量数据迁移。"
+        url: 
+        short: 
+        suffix: 
+      - prefix: "*快速文件系统重建机制*：面向元数据服务器失效场景，设计了一种对经过批量文件归档后文件系统的快速重建机制，从慢速的HDD或光盘上扫描文件系统元数据区域和专用的重建提示信息来一次性重构整个目录树和所有的文件索引。"
+        url:
+        short:
+        suffix:
+      - prefix: "*面向海量冷数据的多层异构存储架构*：面向海量冷数据场景，设计了一种跨DRAM-SSD-HDD-光盘的多层数据存储架构，并提出了高效而简洁的层内数据布局结构与冷热感知的层间数据迁移机制。"
+        url:
+        short:
+        suffix:
+
+skills:
+  - category: 内核开发
+    prefix: 熟悉Linux kernel中Page Cache，EXT4，F2FS和XFS等内核模块
+    short: 
+    url: //
+    suffix: ""
+  - category: 存储I/O栈
+    prefix: 熟悉存储I/O栈中文件系统，块层，和卷管理的原理与性能瓶颈
+    short: 
+    url: //
+    suffix: ""
+  - category: 并行优化
+    prefix: 熟悉并发编程，高并发性能调优，锁开销分析与优化
+    short: 
+    url: //
+    suffix: ""
+  - category: 数据库
+    prefix: 熟悉LevelDB，熟悉KV-Store 的一般索引流程与事务性机制
+    short: 
+    url: //
+    suffix: ""
+  - category: 存储设备
+    prefix: 熟悉NVMe SSD, CXL-SSD, ZNS-SSD, 非易失内存, HDD, 光盘等存储设备的原理与性能特性
+    short: 
+    url: //
+    suffix: ""
+  - category: 编程语言
+    prefix: C, C++, Python, Java
+    short: 
+    url: //
+    suffix: ""
+ 
+
+    
+    
+    
+
+languages:
+  # - language: 英语(CET-6)
+
+interests:
+  # - 电子游戏
+  # - 摄影
+  # - 电影
+  # - MacOS软件
+  # - 大模型应用
+
+references:
+  # You can comment out the entries below if you don't have any references
+  # The same goes for the publications
+
+  # - name: Dr. Jane Austin
+    # reference: John was a great student. He was always eager to learn new things and was very passionate about his studies. As his mentor, I am proud to say that he was also a great leader and was able to lead his team to victory in the 2020 SCG Bangkok Business Challenge Global Competition.
+    # url: https://janeaustin.com
