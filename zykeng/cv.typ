@@ -107,7 +107,7 @@
 
 #let cvwork(info, isbreakable: true) = {
     if info.work != none {block[
-        == 实习经历
+        == Internship
         #for w in info.work {
             block(width: 100%, breakable: isbreakable)[
                 // line 1: company and location
@@ -152,21 +152,21 @@
 
 #let cveducation(info, isbreakable: true) = {
     if info.education != none {block[
-        == 教育背景
+        == Education
         #for edu in info.education {
             let start = utils.strpdate(edu.startDate)
             let end = utils.strpdate(edu.endDate)
 
             let edu-items = ""
-            if edu.area != none {{edu-items = edu-items + "- *研究方向*: " + edu.area + "\n"}}
+            if edu.area != none {{edu-items = edu-items + "- *Research Areas*: " + edu.area + "\n"}}
             if edu.honors != none {
                 if edu.grade != none {
-                    edu-items = edu-items + "- *已获荣誉*: " + edu.honors.join(", ") + "\n"
+                    edu-items = edu-items + "- *Achievement*: " + edu.honors.join(", ") + "\n"
                 } else {
                     edu-items = edu-items + "- *荣誉*: " + edu.honors.join(", ") + "\n"
                 }
             }
-            if edu.courses != none {edu-items = edu-items + "- *部分课程*: " + edu.courses.join(", ") + "\n"} else {none}
+            if edu.courses != none {edu-items = edu-items + "- *Experiences*: " + edu.courses.join(", ") + "\n"} else {none}
             if edu.highlights != none {
                 for hi in edu.highlights {
                     edu-items = edu-items + "- " + hi + "\n"
@@ -223,7 +223,7 @@
 
 #let cvpublications(info, isbreakable: true) = {
     if info.publications != none {block[
-        == 主要成果
+        == Publication
         #for pub in info.publications {
             // parse ISO date strings into datetime objects
             // create a block layout for each publication entry
@@ -246,7 +246,7 @@
 
 #let cvprojects(info, isbreakable: true) = {
     if info.projects != none {block[
-        == 科研项目
+        == Research Experiences
         #for project in info.projects {
             // parse ISO date strings into datetime objects
             
@@ -276,7 +276,7 @@
 
 #let cvawards(info, isbreakable: true) = {
     if info.awards != none {block[
-        == 竞赛奖项
+        == Awards
         #for award in info.awards {
             // parse ISO date strings into datetime objects
             
@@ -303,7 +303,7 @@
 
 #let cvRES(info, isbreakable: true) = {
     if info.awards2 != none {block[
-        == 研究兴趣
+        == Research Interests
         #for award in info.awards2 {
             // parse ISO date strings into datetime objects
             

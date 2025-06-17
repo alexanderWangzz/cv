@@ -107,7 +107,7 @@
 
 #let cvwork(info, isbreakable: true) = {
     if info.work != none {block[
-        == 实习经历
+        == Internship Experience
         #for w in info.work {
             block(width: 100%, breakable: isbreakable)[
                 // line 1: company and location
@@ -152,16 +152,16 @@
 
 #let cveducation(info, isbreakable: true) = {
     if info.education != none {block[
-        == 教育背景
+        == Education
         #for edu in info.education {
             let start = utils.strpdate(edu.startDate)
             let end = utils.strpdate(edu.endDate)
 
             let edu-items = ""
-            if edu.area != none {{edu-items = edu-items + "- *研究方向*: " + edu.area + "\n"}}
+            if edu.area != none {{edu-items = edu-items + "- *Research Areas*: " + edu.area + "\n"}}
             if edu.honors != none {
                 if edu.grade != none {
-                    edu-items = edu-items + "- *已获荣誉*: " + edu.honors.join(", ") + "\n"
+                    edu-items = edu-items + "- *Award*: " + edu.honors.join(", ") + "\n"
                 } else {
                     edu-items = edu-items + "- *荣誉*: " + edu.honors.join(", ") + "\n"
                 }

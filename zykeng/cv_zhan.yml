@@ -1,0 +1,322 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/jskherman/imprecv/main/cv.typ.schema.json
+
+personal:
+  name: Yekang Zhan
+  email: zhanyekang@foxmail.com
+  phone: (+86) 18271842976
+  url: https://github.com/YekangZhan
+  location:
+  #   city: Wuhan
+  #   region: HuBei
+  #   postalCode: 1234
+  #   country: China
+  profiles:
+    - network: GitHub
+      username: YekangZhan
+      url: //
+
+education:
+  - institution: Huazhong University of Science and Technology (HUST)
+    url: https://wnlo.hust.edu.cn/
+    area: Storage Systems, File Systems, Storage I/O Stack, Dynamic I/O Scheduling
+    studyType: PhD Student in Computer Architecture and System
+    startDate: 2021-09-01
+    endDate: present
+    location: Wuhan, Hubei, China
+    grade: 'XXX'
+    honors: 
+      - GPA 85/100, Academic Scholarships x 2
+    courses:
+      
+    highlights:
+
+  - institution: Huazhong Agricultural University (HZAU)
+    url: https://coi.hzau.edu.cn/
+    area: 
+    studyType: Bachelor in Computer Science and Technology
+    startDate: 2017-09-01
+    endDate: 2021-06-30
+    location: Wuhan, Hubei, China
+    grade: 'xxx'
+    honors:
+      - Postgraduate Recommendation Rank 2/132, Academic Scholarships x 2
+
+    courses:
+      - ACM-ICPC Team Leader in HZAU, Technological Innovation Department
+    onlineCourses: 
+    highlights:
+work:
+
+  - organization: Tencent
+    url: https://www.tencent.com/zh-cn/
+    location: Shenzhen, Guangdong, China
+    positions:
+      - position: Storage Engine Intern, TEG
+        startDate: 2023-04-14
+        endDate: 2024-03-22
+        highlights:
+          - prefix: "*Storage Engine R&D:* Developed a novel storage system based on emerging non-volatile memory."
+            url: 
+            short: 
+            suffix: 
+          
+affiliations:
+  - organization: White Hat Hackers Association
+    position: Vice President for Internal Affairs
+    location: Cambridge, United Kingdom
+    url: https://example.com
+    startDate: 2020-05-30
+    endDate: 2021-05-30
+    highlights:
+      - But I must explain to you how all this mistaken idea of reprobating pleasure and extolling pain arose.
+      - But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?
+      - Can you then suppose that those heroic men performed their famous deeds without any motive at all?
+  - organization: London Bridge Toastmasters Club
+    position: Member
+    location: City of London, United Kingdom
+    url:
+    startDate: 2022-06-15
+    endDate: 2023-06-30
+    highlights:
+      - Won Champion in the Division A District X Speech Evaluation Contest of Toastmasters International
+      - Promising Toastmaster of the Year (PY 2022-2023)
+      - Tell me, pray, what explanation do you put upon their actions?
+
+awards:
+  - title: "The 5th China Collegiate Programming Contest (Xiangtan Station)"
+    date: 
+    rank: Silver Medal
+    url:
+    location: 
+    highlights:
+  - title: "The 5th China Collegiate Programming Contest (Qinhuangdao Station)"
+    date: 
+    rank: Bronze Medal
+    url:
+    location:
+    highlights:
+  - title: "The 45th International Collegiate Programming Contest Asia Kunming Regional Contest"
+    date: 
+    rank: Bronze Medal
+    url:
+    location:
+    highlights:
+  - title: "The 43th International Collegiate Programming Contest Asia Qingdao Regional Contest"
+    date: 
+    rank: Bronze Medal
+    url:
+    location:
+    highlights:
+  - title: "The 10th Blue Bridge Cup National Software and Information Technology Professional Talent Competition \\"
+    date: 
+    rank: "National Final: Second Prize (Top 1.5%)"
+    url:
+    location: 
+    highlights:
+  - title: "The 10th Blue Bridge Cup National Software and Information Technology Professional Talent Competition \\"
+    date: 
+    rank: "Hubei Regional Contest: First Prize (Top 10%)"
+    url:
+    location: 
+    highlights:
+  - title: "The 8th ASC Student Supercomputer Challenge"
+    date: 
+    rank:  Second Prize
+    url:
+    location: 
+    highlights:
+
+
+awards2:
+  - title: "Exploring the revolution and opportunities brought by high-bandwidth SSDs to storage systems \\"
+    date: 
+    rank: (e.g., PCIe5.0 / PCIe6.0 SSD)
+    url:
+    location: 
+    highlights:
+  - title: "Exploring how emerging storage devices can enhance existing storage systems \\"
+    date: 
+    rank: (e.g., NVM/PM, CXL-SSD, ZNS-SSD, Optical Storage)
+    url:
+    location:
+    highlights:
+  - title: "Building next-generation storage systems \\"
+    date: 
+    rank: (e.g., architecture and performance metric evaluation, AI for System and System for AI)
+    url:
+    location:
+    highlights:
+
+
+
+certificates:
+  - name: "Learning How to Learn: Powerful mental tools to help you master tough subjects"
+    date: 2021-09-01
+    issuer: Coursera
+    url: https://example.com
+
+publications:
+  - name: "Rethinking the Request-to-IO Transformation Process of File Systems for Full Utilization of High-Bandwidth SSDs"
+    huanhang: N
+    url: https://www.usenix.org/conference/fast25/presentation/zhan
+    info: (*The First Top Tier Conference Paper on File Systems at HUST*)
+    publisher: "*FAST25, CCF-A, First Author*"
+  - name: "AIS: An Active Idleness I/O Scheduler to Reduce Buffer-Exhausted Degradation of Solid-State Drives"
+    huanhang: 
+    url: https://dl.acm.org/doi/10.1145/3708538
+    info: (I/O Scheduling and SSD Performance Optimization)
+    publisher: "*TACO24, CCF-A, First Author*"
+  - name: "Rearchitecting Buffered I/O in the Era of High-Bandwidth SSDs\\"
+    huanhang: 
+    url:
+    info: (Storage I/O Stack Optimization and High-Performance Storage)
+    publisher: "*FAST26, CCF-A, Under Review*"
+  - name: "RomeFS: A CXL-SSD Aware File System Exploiting Synergy of Memory-Block Dual Paths"
+    huanhang: 
+    url: https://dl.acm.org/doi/10.1145/3698038.3698539
+    info: (*The First File System Based on CXL-SSD*)
+    publisher: "*SoCC24, CCF-B, First Author*"
+  - name: "HBtree: A Heterogeneous B+ tree with Multi-granularity for Hybrid NVM-SSD Storage"
+    huanhang: 
+    url: https://ieeexplore.ieee.org/document/9925539
+    info: (Efficient Index Structure and Heterogeneous Storage)
+    publisher: "*IEEE NAS22, First Author*"
+  - name: "SchInFS: A File System Integrating Functions of the Block I/O Scheduler for ZNS SSDs"
+    huanhang: 
+    url: https://ieeexplore.ieee.org/document/10818014
+    info: (ZNS-SSD Exploition and Novel File Systems)
+    publisher: "*ICCD24, CCF-B*"
+  - name: "HeteroGNN: A Heterogeneous Stage Division Based GNN Training Framework to Maximize CPU-GPU Parallelism\\"
+    huanhang: 
+    url:
+    info: (GNN Training Acceleration and Fine-Grained Task Scheduling)
+    publisher: "*ICME25, CCF-B*"
+
+
+projects:
+  - name: "Maximizing the Performance of High-Bandwidth SSDs by Utilizing Heterogeneous Low-Latency Storage (National Key Research and Development Program No.2022YFB2804302)"
+    url: 
+    repo: #https://github.com/YekangZhan/OrchFS
+    highlights:
+      - prefix: "Identified performance bottlenecks of the storage I/O stack and maximized storage performance."
+        url: 
+        short: 
+        suffix:
+      - prefix: "Achieved up to 29.76x write performance improvement and 6.79x read performance improvement compared to SOTA and related product file systems."
+        url: 
+        short: 
+        suffix: 
+      - prefix: "Open source：https://github.com/YekangZhan/OrchFS. The paper has been published in FAST25."
+        url:
+        short:
+        suffix:
+  - name: "A Novel File System Architecture Based on Emerging Dual-Path CXL-SSD (National Natural Science Foundation of China No.62172175)"
+    url: 
+    repo: 
+    highlights:
+      - prefix: "Analyzed the dual-path data access characteristics of CXL-SSD and devised a novel file system architecture."
+        url: 
+        short: 
+        suffix:
+      - prefix: "Achieved up to 14.24x performance improvement compared to SOTA and related product file systems."
+        url:
+        short:
+        suffix:
+      - prefix: "Implemented a file system prototype with approximately 14,000 LOC and a CXL-SSD simulator with approximately 3,000 LOC. The paper has been published in SoCC24."
+        url:
+        short:
+        suffix:
+
+  - name: "Enhancing the Buffered I/O Performance by Leveraging High-Bandwidth SSDs (National Key Research and Development Program No.2024YFB4505105)"
+    url: 
+    repo: 
+    highlights:
+      - prefix: "Rearchitected the buffered I/O architecture to proactively exploit SSD performance while retaining all of the advantages of buffered I/O without requiring application modifications."
+        url: 
+        short: 
+        suffix:
+      - prefix: "Achieved up to 3.91x and 82.80x throughput and latency improvements respectively."
+        url:
+        short:
+        suffix:
+      - prefix: "This architecture has been implemented in XFS of Linux 6.8, with over 5,000 LOC, and has been submitted to FAST26 with plans for open source."
+        url:
+        short:
+        suffix:
+      # - prefix: 在此期间熟悉了Linux 内核文件系统开发与性能调优，了解了内核多线程与并发锁竞争。
+      #   url:
+      #   short:
+      #   suffix:
+      
+  - name: "An Active Idleness Scheduler to Maximize SSD Internal Buffer Recovery (National Natural Science Foundation of China No. 61821003)"
+    url: 
+    repo: 
+    highlights:
+      - prefix: "Analyzed the SSD performance degradation problem caused by internal buffer exhaustion and established a buffer recovery model."
+        url: 
+        short: 
+        suffix:
+      - prefix: "Designed an SSD performance degradation predictor based on the model and implemented a block layer scheduler to overcome this problem."
+        url: 
+        short: 
+        suffix:
+      - prefix: "Improved SSD average I/O latency and tail latency by up to 29.3% and 78.7%, respectively, under real-world cloud storage traces. The paper has been published in TACO24."
+        url:
+        short:
+        suffix:
+
+  - name: "ZB-Level Massive Cold Data Storage Architecture and Efficient Storage Management System (National Key Research and Development Program No. 2024YFB4505105)"
+    url: 
+    repo: 
+    highlights: 
+      - prefix: "Designed a multi-layer data storage architecture across DRAM-SSD-HDD-CD for ZB-level massive cold data scenarios. Devised batch file processing mechanism and fast file collection and reconstruction mechanism."
+        url:
+        short:
+        suffix:
+      - prefix: "It is expected to apply for a invention patent and publish an academic paper."
+        url:
+        short:
+        suffix:
+
+
+skills:
+  - category: 挖掘高带宽SSD对存储系统带来的变革与机会
+    prefix: ""
+    short: 
+    url: //
+    suffix: ""
+  - category: 探索新型存储器如何强化现有存储系统
+    prefix: ""
+    short: 
+    url: //
+    suffix: ""
+  - category: 新型互连协议与相关存储设备
+    prefix: ""
+    short: 
+    url: //
+    suffix: ""
+
+
+ 
+
+    
+    
+    
+
+languages:
+  # - language: 英语(CET-6)
+
+interests:
+  # - 电子游戏
+  # - 摄影
+  # - 电影
+  # - MacOS软件
+  # - 大模型应用
+
+references:
+  # You can comment out the entries below if you don't have any references
+  # The same goes for the publications
+
+  # - name: Dr. Jane Austin
+    # reference: John was a great student. He was always eager to learn new things and was very passionate about his studies. As his mentor, I am proud to say that he was also a great leader and was able to lead his team to victory in the 2020 SCG Bangkok Business Challenge Global Competition.
+    # url: https://janeaustin.com

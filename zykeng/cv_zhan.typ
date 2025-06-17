@@ -11,7 +11,7 @@
     linespacing: 8pt,
     showAddress: false, // true/false show address in contact info
     showNumber: true,  // true/false show phone number in contact info
-    headingsmallcaps: false
+    headingsmallcaps: true
 )
 
 // setrules and showrules can be overridden by re-declaring it here

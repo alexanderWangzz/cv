@@ -18,8 +18,8 @@ personal:
 education:
   - institution: 华中科技大学
     url: https://wnlo.hust.edu.cn/
-    area: 存储系统，文件系统，存储I/O栈，动态I/O调度，新型存储器
-    studyType: 武汉光电国家研究中心 计算机系统结构 博士
+    area: 存储系统，文件系统，I/O调度，新型存储器
+    studyType: 武汉国家光电研究中心 计算机系统结构 博士
     startDate: 2021-09-01
     endDate: Present
     location: 湖北 武汉
@@ -76,22 +76,22 @@ work:
   #           url:
   #           short:
   #           suffix:
-  - organization: 腾讯科技(深圳)有限公司
-    url: https://www.tencent.com/zh-cn/
-    location: 广东 深圳
-    positions:
-      - position: TEG 存储引擎组
-        startDate: 2023-04-14
-        endDate: 2024-03-22
-        highlights:
-          - prefix: 研发基于新型非易失内存的存储系统。
-            url: 
-            short: 
-            suffix: 
-          - prefix: 基于该系统进一步提出了一种最大化高带宽SSD性能的存储系统架构，发表论文一篇(FAST25)并申请专利一项。
-            url: 
-            short: 
-            suffix: 
+  # - organization: 腾讯科技(深圳)有限公司
+  #   url: https://www.tencentcloud.com/zh
+  #   location: 广东 深圳
+  #   positions:
+  #     - position: 云架构平台部 系统软件研发实习生
+  #       startDate: 2022-01-18
+  #       endDate: 2022-05-13
+  #       highlights:
+  #         - prefix: "*智能资源调度*：对负载模型和访问模式聚类并进行时序预测，提出的智能调度策略在多个资源维度上至高提升20%利用率"
+  #           url: 
+  #           short: 
+  #           suffix: 
+  #         - prefix: "*优先级流控系统原型*：提出并实现了一种基于无锁队列的的流量控制算法，在带宽超限的情况下保证用户服务质量"
+  #           url:
+  #           short:
+  #           suffix:
           
   # - organization: 上海商汤智能科技有限公司
   #   url: https://www.sensetime.com/cn
@@ -144,12 +144,6 @@ awards:
     url:
     location:
     highlights:
-  - title: "第四十三届国际大学生程序设计竞赛(*ICPC*)亚洲区域赛青岛赛区"
-    date: 
-    rank: 铜牌
-    url:
-    location:
-    highlights:
   - title: "第四十五届国际大学生程序设计竞赛(*ICPC*)亚洲区域赛昆明赛区"
     date: 
     rank: 铜牌
@@ -159,6 +153,12 @@ awards:
   - title: "第十届蓝桥杯全国软件和信息技术专业人才大赛 C/C++A组 全国总决赛"
     date: 
     rank: 二等奖 (1.5%)
+    url:
+    location: 
+    highlights:
+  - title: "第九届蓝桥杯全国软件和信息技术专业人才大赛湖北赛区 C/C++ A组"
+    date: 
+    rank: 一等奖 (10%)
     url:
     location: 
     highlights:
@@ -174,34 +174,7 @@ awards:
     url:
     location: 
     highlights:
-  - title: "CCF计算机软件能力认证(CSP)"
-    date: 
-    rank:  364分（全国前1.07%）
-    url:
-    location: 
-    highlights:
   
-
-awards2:
-  - title: "挖掘高带宽SSD对存储系统带来的变革与机会"
-    date: 
-    rank: (PCIe5.0 / PCIe6.0 SSD)
-    url:
-    location: 
-    highlights:
-  - title: "探索新型存储器如何强化现有存储系统"
-    date: 
-    rank: (NVM/PM, CXL-SSD, ZNS-SSD, 光存储技术)
-    url:
-    location:
-    highlights:
-  - title: "构建下一代存储系统"
-    date: 
-    rank: (架构与性能指标评价体系, AI for System与应用场景定制优化, 能耗控制, 数据管理, 安全性与可靠性)
-    url:
-    location:
-    highlights:
-
 
 
 certificates:
@@ -214,22 +187,22 @@ publications:
   - name: "Rethinking the Request-to-IO Transformation Process of File Systems for Full Utilization of High-Bandwidth SSDs"
     huanhang: N
     url: https://www.usenix.org/conference/fast25/presentation/zhan
-    info: (高性能文件系统与异构存储, *华中科技大学首篇文件系统方向顶会论文*)
+    info: (高性能文件系统与异构存储,*华中科技大学文件系统方向第一篇顶会论文*)
     publisher: "*FAST25, CCF-A, 一作*"
-  - name: "AIS: An Active Idleness I/O Scheduler to Reduce Buffer-Exhausted Degradation of Solid-State Drives"
+  - name: "AIS: An Active Idleness I/O Scheduler to Reduce Bufer-Exhausted Degradation of Solid-State Drives"
     huanhang: 
     url: https://dl.acm.org/doi/10.1145/3708538
     info: (I/O调度与固态硬盘性能优化)
     publisher: "*TACO24, CCF-A, 一作*"
-  - name: "Rearchitecting Buffered I/O in the Era of High-Bandwidth SSDs\\"
+  - name: "An Enhanced Buffered I/O with the Scrap Buffer Architecture Benefiting from High SSD Bandwidth\\"
     huanhang: 
     url:
     info: (存储I/O栈优化与高性能存储)
-    publisher: "*FAST26, CCF-A, 一作*"
+    publisher: "*FAST26, CCF-A, 在投*"
   - name: "RomeFS: A CXL-SSD Aware File System Exploiting Synergy of Memory-Block Dual Paths"
     huanhang: 
     url: https://dl.acm.org/doi/10.1145/3698038.3698539
-    info: (CXL互连技术与新型文件系统, *首个基于CXL-SSD的文件系统*)
+    info: (CXL互连技术与新型文件系统,*首个基于CXL-SSD的文件系统*)
     publisher: "*SoCC24, CCF-B, 一作*"
   - name: "HBtree: A Heterogeneous B+ tree with Multi-granularity for Hybrid NVM-SSD Storage"
     huanhang: 
@@ -262,7 +235,15 @@ projects:
         url: 
         short: 
         suffix:
-      - prefix: "*最大化存储性能*：设计了对齐优先且最小化碎片的运行时请求划分机制和文件系统并行I/O处理机制去最大化设备性能。"
+      - prefix: "*写请求划分*：设计了一种对齐优先且最小化碎片的运行时写请求划分机制，将任意模式的用户访问请求划分为适应底层异构存储设备（低延迟的辅助存储设备与高带宽的块存储设备）访问特性的多个子请求，从而让存储设备能够高效地处理这些访问请求，避免慢速的I/O对齐与页缓存。"
+        url: 
+        short: 
+        suffix:
+      - prefix: "*并行I/O引擎*：设计了一种新的文件系统并行I/O处理机制，解绑应用程序线程与设备I/O线程，透明地以一种主动并行的访问模式来实现辅助设备与SSD之间，以及SSD内部的并行访问。"
+        url: 
+        short: 
+        suffix:
+      - prefix: "*统一文件索引机制*：基于radix tree设计了一种新的高效文件数据索引结构，以一种隐式并行且缓存友好的方式快速定位分布在辅助设备和SSD之上的数据存储单元。"
         url: 
         short: 
         suffix:
@@ -270,44 +251,48 @@ projects:
         url: 
         short: 
         suffix: 
-      - prefix: "*已有成果*：文件系统代码已开源：https://github.com/YekangZhan/OrchFS。论文已发表在FAST25。"
+      - prefix: "*开源成果*：文件系统核心代码量超17000行，已开源在https://github.com/YekangZhan/OrchFS。"
         url:
         short:
         suffix:
-  - name: "RomeFS: 基于CXL-SSD独特双路访问特性的新型文件系统架构 (国家自然科学基金No.62172175)"
+  - name: "RomeFS: 基于设备独特的双路访问特性提出了一种双路访问文件系统架构 (国家自然科学基金No.62172175)"
     url: 
     repo: 
     highlights:
-      - prefix: "*CXL-SSD双数据路径访问特性分析*：CXL.mem路径支持字节寻址，提供低延迟的数据访问，但大型数据访问会导致其性能降级。CXL.io路径为块数据路径，性能相对稳定但访问延迟高。"
+      - prefix: "*协同的双路数据访问机制*：在文件系统中透明地主动利用CXL.mem路径去处理所有的元数据操作与事务性操作，使用CXL.mem和CXL.io路径去协同处理文件数据操作。"
         url: 
         short: 
         suffix:
-      - prefix: "*协同的双路数据访问文件系统架构*：在文件系统中透明地主动利用CXL.mem路径去处理所有的元数据操作与事务性操作，使用CXL.mem和CXL.io路径去协同处理文件数据操作。"
+      - prefix: "*并行文件数据索引机制*：使用B+tree去索引位于CXL.mem存储区域上离散而稀疏的数据日志，使用radix tree去索引位于CXL.io存储区域上地址连续且大块的数据块，并引入了一种自适应的并行数据查找机制实现了高效的数据定位。"
         url: 
         short: 
-        suffix:
-      - prefix: "*实验效果*：比起SOTA和相关的产品级文件系统，该文件系统在广泛的负载评估下实现了至多14.24倍的性能提升。"
+        suffix: 
+      - prefix: "*数据去碎片机制*：引入merge-on-write技术和per-block data log writeback机制去减少文件系统数据碎片并实现灵活的CXL.mem存储区域空间释放。"
+        url: 
+        short: 
+        suffix: 
+      - prefix: "*实验效果*：比起SOTA和相关的产品级文件系统，该文件系统实现了至多14.24倍的性能提升。"
         url:
         short:
         suffix:
-      - prefix: "*已有成果*：实现了约14000行代码的文件系统原型和约3000行代码的CXL-SSD模拟器。论文已发表在SoCC24。"
+      - prefix: "*代码实现*：文件系统核心代码量超14000行。额外实现了一个约3000行的CXL-SSD模拟器，支持调整访问延迟，存储区域容量，以及数据下刷策略。"
         url:
         short:
         suffix:
 
-  - name: "WSBuffer：利用高带宽存储性能强化buffered I/O访问模式性能 (国家重点研发计划No.2024YFB4505105)"
+  - name: "Scrap Buffer：利用高带宽存储性能去强化buffered I/O访问模式性能 (国家重点研发计划No.2024YFB4505105)"
     url: 
     repo: 
     highlights:
-      - prefix: "*最小化缓存的高效数据访问机制*：使用memory去部分地缓存对SSD不友好的写入，并将对SSD友好的写入直接发送到SSDs去主动利用SSD带宽，并让page cache专用于执行高效的读处理，与此同时实现了一种低成本的数据一致性机制。"
+      - prefix: "*Scrap Buffer主导的高效数据访问机制*：使用scrap buffer和高带宽SSD去协作处理用户写请求，使用scrap buffer和page cache去协作处理用户读请求，并实现了低成本的数据一致性维护。"
         url: 
         short: 
         suffix:
-      - prefix: "*机会主义的两阶段 dirty-page flushing*：在第一阶段执行大型读取去填充未满的WSBuffer页面，在第二阶段执行大型写入去将已满的WSBuffer页面写回SSD，并实现了高可扩展性的基于SSD带宽感知的机会性 page flushing。"
+      - prefix: "*高可扩展性的两阶段Scrap Buffer Flushing*：在第一阶段执行大型读取去填充scrap-buffer页面，在第二阶段执行大型写入去将scrap-buffer页面写回SSD，并实现了基于SSD带宽感知的高可扩展性的阶段间并行和阶段内并行。"
         url: 
         short: 
         suffix: 
-      - prefix: "*并发的页管理机制*：针对传统page cache中自由页插入，干净页删除，和脏页状态维护等操作导致的高锁竞争开销问题，引入了一种并发页管理机制去分别管理page cache和WSBuffer，显著减少了锁竞争。"
+      - prefix: "*细粒度的Scrap Buffer锁机制*：针对传统page cache中自由页插入，干净页删除，和脏页状态维护等操作导致的高锁竞争开销问题，引入了一种可扩展的细粒度锁机制，显著减少了锁开销。"
         url: 
         short: 
         suffix: 
@@ -315,7 +300,7 @@ projects:
         url:
         short:
         suffix:
-      - prefix: "*当前进展*：已在Linux 6.8的XFS中实现了WSBuffer架构，核心代码量超5000行，已投稿FAST26，计划开源。"
+      - prefix: "*代码实现*：Scrap Buffer Architecture被实现在Linux kernel 6.8的XFS中，核心代码量超5000行，计划开源。"
         url:
         short:
         suffix:
@@ -328,19 +313,19 @@ projects:
     url: 
     repo: 
     highlights:
-      - prefix: "*固态硬盘缓存耗尽性能降级模型*：分析了固态硬盘因内部缓存耗尽而导致的性能降级问题，并建立了缓存恢复模型。经过测试验证，该模型可以很好地用于三星，西数和铠侠等主流SSD厂商的多款SSD。"
+      - prefix: "*固态硬盘缓存耗尽性能降级模型*：分析了固态硬盘因内部缓存耗尽而导致的性能降级问题，并建立了缓存恢复模型。基于该模型实现了一个SSD特性提取工具，用于自动化提取模型参数。"
         url: 
         short: 
         suffix:
+      - prefix: "*模型适用性*：经过测试验证，该模型可以很好地用于三星，西数和铠侠等主流SSD厂商的多款SSD。"
+        url: 
+        short: 
+        suffix: 
       - prefix: "*主动空闲调度器*：在该模型的基础上设计了一个SSD性能降级预测器，并实现了一个块层调度器去通过预测器信息来动态调整SSD负载，从而缓解SSD性能降级问题。"
         url: 
         short: 
         suffix:
-      - prefix: "*实验效果*：在真实世界的云存储trace 下，该调度器分别改善了SSD的平均I/O延迟和尾延迟至多29.3%和78.7%。比起相关的SOTA调度器，该调度器在LevelDB和图计算应用上提升了至多51.9%的应用程序性能。"
-        url:
-        short:
-        suffix:
-      - prefix: "*已有成果*：实现了主动空闲调度器和一个自动化的SSD模型特征参数提取工具。论文已发表在TACO24。"
+      - prefix: "*实验效果*：在真实世界的云存储trace 下，该调度器分别改善了SSD的平均I/O延迟、99th、99.9th、和99.99th尾延迟至多29.3%, 37.3%, 78.7%和67.2%。比起相关的SOTA调度器，该调度器提升了至多51.9%的应用程序性能。"
         url:
         short:
         suffix:
@@ -353,37 +338,50 @@ projects:
     url: 
     repo: 
     highlights: 
-      - prefix: "*面向ZB级海量冷数据的存储系统架构*：面向海量冷数据场景，设计了一种跨DRAM-SSD-HDD-光盘的多层数据存储架构。该架构支持高效的海量数据批量归集与重建，并具备高能效性。"
-        url:
-        short:
-        suffix:
-      - prefix: "*批量文件处理机制*：针对大量小文件归档时昂贵的小型随机元数据I/O问题，设计了并行批量文件处理机制，绕过慢速的标准POSIX串行接口，引入一种并行访问接口来批量处理元数据和文件数据，用于批量文件管理与迁移。"
+      - prefix: "*批量文件归档机制*：针对大量小文件迁移时昂贵的小型随机元数据I/O问题，设计了并行批量文件归档机制，绕过慢速的标准POSIX串行接口，引入一种并行访问接口来批量扫描元数据和文件数据，再执行批量数据迁移。"
         url: 
         short: 
         suffix: 
-      - prefix: "*快速的文件归集重建机制*：面向大规模存储系统归集与重建场景，在批量文件处理机制的基础上，扫描具备新型数据布局格式的光盘上的元数据区域和相应的重建提示信息来一次性重建整个目录树和相应的文件索引。"
+      - prefix: "*快速文件系统重建机制*：面向元数据服务器失效场景，设计了一种对经过批量文件归档后文件系统的快速重建机制，从慢速的HDD或光盘上扫描文件系统元数据区域和专用的重建提示信息来一次性重构整个目录树和所有的文件索引。"
+        url:
+        short:
+        suffix:
+      - prefix: "*面向海量冷数据的多层异构存储架构*：面向海量冷数据场景，设计了一种跨DRAM-SSD-HDD-光盘的多层数据存储架构，并提出了高效而简洁的层内数据布局结构与冷热感知的层间数据迁移机制。"
         url:
         short:
         suffix:
 
 skills:
-  - category: 挖掘高带宽SSD对存储系统带来的变革与机会
-    prefix: ""
+  - category: 内核开发
+    prefix: 熟悉Linux kernel中Page Cache，EXT4，F2FS和XFS等内核模块
     short: 
     url: //
     suffix: ""
-  - category: 探索新型存储器如何强化现有存储系统
-    prefix: ""
+  - category: 存储I/O栈
+    prefix: 熟悉存储I/O栈中文件系统，块层，和卷管理的原理与性能瓶颈
     short: 
     url: //
     suffix: ""
-  - category: 新型互连协议与相关存储设备
-    prefix: ""
+  - category: 并行优化
+    prefix: 熟悉并发编程，高并发性能调优，锁开销分析与优化
     short: 
     url: //
     suffix: ""
-
-
+  - category: 数据库
+    prefix: 熟悉LevelDB，熟悉KV-Store 的一般索引流程与事务性机制
+    short: 
+    url: //
+    suffix: ""
+  - category: 存储设备
+    prefix: 熟悉NVMe SSD, CXL-SSD, ZNS-SSD, 非易失内存, HDD, 光盘等存储设备的原理与性能特性
+    short: 
+    url: //
+    suffix: ""
+  - category: 编程语言
+    prefix: C, C++, Python, Java
+    short: 
+    url: //
+    suffix: ""
  
 
     

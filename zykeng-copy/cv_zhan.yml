@@ -16,39 +16,30 @@ personal:
       url: //
 
 education:
-  - institution: 华中科技大学
+  - institution: Huazhong University of Science and Technology
     url: https://wnlo.hust.edu.cn/
-    area: 存储系统，文件系统，存储I/O栈，动态I/O调度，新型存储器
-    studyType: 武汉光电国家研究中心 计算机系统结构 博士
+    area: Storage Systems, File Systems, Storage I/O Stack, Dynamic I/O Scheduling
+    studyType: PhD Student in Computer System Architecture 
     startDate: 2021-09-01
-    endDate: Present
-    location: 湖北 武汉
+    endDate: 2026-06-30
+    location: Wuhan, Hubei, China
     grade: 'XXX'
     honors:
-      - 华为奖学金 (2%)
-      - 校三好研究生 (5%)
-      - 科技创新奖学金 (5%)
-
 
     courses:
-      # - 分布式系统(MIT 6.824)
-      # - 深度学习系统(CMU 10414)
-      # - 数据库系统(MIT 6.1810)
       
     highlights:
-      # - "*活动经历*: 科研助理, “数据智能”双创团队负责人, 《数据结构与算法设计》助教"
-  - institution: 华中农业大学
+
+  - institution: Huazhong Agricultural University
     url: https://coi.hzau.edu.cn/
     area: 
-    studyType: 信息学院 计算机科学与技术 本科
+    studyType: Bachelor in Computer Science and Technology
     startDate: 2017-09-01
     endDate: 2021-06-30
-    location: 湖北 武汉
+    location: Wuhan, Hubei, China
     grade: 'GPA: 3.9/4.0($2^"ed"$/132)'
     honors:
-      - 保研排名 2/132 (1.5%)
-      - 校三好学生 (5%)
-      - 优秀共青团员 (5%)
+
 
     courses:
     #   - 数据结构与算法
@@ -60,27 +51,12 @@ education:
     onlineCourses: 
     highlights:
 work:
-  # - organization: 腾讯科技(深圳)有限公司
-  #   url: https://www.tencentcloud.com/zh
-  #   location: 广东 深圳
-  #   positions:
-  #     - position: 云架构平台部 系统软件研发实习生
-  #       startDate: 2024-05-30
-  #       endDate: 2024-08-30
-  #       highlights:
-  #         - prefix: "*存储引擎研发*：实现"
-  #           url: https://spdk.io
-  #           short: SPDK
-  #           suffix: "的FTL模块支持通用NVMe SSD在host端自定义写分流以及垃圾回收策略的追加写引擎"
-  #         - prefix: "*分流及垃圾回收策略*: 实现的写分流及垃圾回收算法测试表明在zipfan:0.8分布下能将写放大从4.31降低至1.59"
-  #           url:
-  #           short:
-  #           suffix:
-  - organization: 腾讯科技(深圳)有限公司
+
+  - organization: Tencent
     url: https://www.tencent.com/zh-cn/
-    location: 广东 深圳
+    location: Shenzhen, Guangdong, China
     positions:
-      - position: TEG 存储引擎组
+      - position: Storage Engine Group Intern
         startDate: 2023-04-14
         endDate: 2024-03-22
         highlights:
@@ -225,7 +201,7 @@ publications:
     huanhang: 
     url:
     info: (存储I/O栈优化与高性能存储)
-    publisher: "*FAST26, CCF-A, 一作*"
+    publisher: "*FAST26, CCF-A, 在投*"
   - name: "RomeFS: A CXL-SSD Aware File System Exploiting Synergy of Memory-Block Dual Paths"
     huanhang: 
     url: https://dl.acm.org/doi/10.1145/3698038.3698539
