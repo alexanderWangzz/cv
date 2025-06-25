@@ -113,10 +113,13 @@
                 // line 1: company and location
                 #if w.url != none [
                     *#link(w.url)[#w.organization]* #h(1fr) *#w.location* \
+                    #v(4pt)
                 ] else [
                     *#w.organization* #h(1fr) *#w.location* \
+                    #v(4pt)
                 ]
             ]
+            
             // create a block layout for each work entry
             let index = 0
             for p in w.positions {
@@ -126,7 +129,7 @@
                     #let start = utils.strpdate(p.startDate)
                     #let end = utils.strpdate(p.endDate)
                     // line 2: position and date range
-                    #text(style: "italic")[#p.position] #h(1fr)
+                    #text(style: "italic")[*#p.position*] #h(1fr)
                     #start #sym.dash.en #end \
                     // highlights or description
                     #for hi in p.highlights [

@@ -19,7 +19,7 @@ education:
   - institution: 华中科技大学
     url: https://wnlo.hust.edu.cn/
     area: 存储系统，文件系统，存储I/O栈，动态I/O调度，新型存储器
-    studyType: 武汉光电国家研究中心 计算机系统结构 博士
+    studyType: 武汉光电国家研究中心 信息存储系统教育部重点实验室 计算机系统结构 博士
     startDate: 2021-09-01
     endDate: Present
     location: 湖北 武汉
@@ -80,15 +80,33 @@ work:
     url: https://www.tencent.com/zh-cn/
     location: 广东 深圳
     positions:
-      - position: TEG 存储引擎组
+      - position: 技术工程事业群(TEG) 存储引擎组 (Research)
         startDate: 2023-04-14
         endDate: 2024-03-22
         highlights:
-          - prefix: 研发基于新型非易失内存的存储系统。
+          - prefix: 研发基于新型非易失内存(NVM)的存储系统。
             url: 
             short: 
             suffix: 
-          - prefix: 基于该系统进一步提出了一种最大化高带宽SSD性能的存储系统架构，发表论文一篇(FAST25)并申请专利一项。
+          - prefix: 设计并开发了一种高性能NVM文件系统(约13000行C++代码)和一种高效的Userspace和Kernelspace的元数据异步交互机制,比起SOTA*实现了至多1.96X的写入性能*。基于该工作进一步提出的文件系统架构论文已被发表到FAST25。
+
+            url: 
+            short: 
+            suffix: 
+        positions:
+      - position: 技术工程事业群(TEG) 文件存储组
+        startDate: 2025-04-30
+        endDate: 2025-06-19
+        highlights:
+          - prefix: 研发腾讯云第三代分布式文件系统HiFS。
+            url: 
+            short: 
+            suffix: 
+          - prefix: 针对HiFS元数据路径中RocksDB WAL文件更新给底层文件系统BlueFS带来的*双写问题*，设计了一种对RocksDB透明的新WAL写入机制：将WAL文件的元数据更新包装为一种特殊格式的WAL Record，追加在WAL文件数据更新之后，从而消除双写问题，*减少了至多49%的写入延迟*。该方案无需修改RocksDB源码。
+            url: 
+            short: 
+            suffix: 
+          - prefix: 在基于同步架构的HiFS元数据路径中，RocksDB WAL文件严格串行的写缓存和写盘操作是制约系统并发性能的关键因素。针对该问题，在上述新WAL写入机制的基础上进一步设计了一种*异步无锁化写入架构*，实现并行的前台写缓存与后台写盘操作。该方案在上述新写入机制的基础上，进一步*提升了至多16.02X的写入性能*。
             url: 
             short: 
             suffix: 
@@ -216,20 +234,20 @@ publications:
     url: https://www.usenix.org/conference/fast25/presentation/zhan
     info: (高性能文件系统与异构存储, *华中科技大学首篇文件系统方向顶会论文*)
     publisher: "*FAST25, CCF-A, 一作*"
+  - name: "Rearchitecting Buffered I/O in the Era of High-Bandwidth SSDs\\"
+    huanhang: 
+    url:
+    info: (内核存储I/O栈优化与高性能存储)
+    publisher: "*FAST26, CCF-A, 一作*"
   - name: "AIS: An Active Idleness I/O Scheduler to Reduce Buffer-Exhausted Degradation of Solid-State Drives"
     huanhang: 
     url: https://dl.acm.org/doi/10.1145/3708538
     info: (I/O调度与固态硬盘性能优化)
     publisher: "*TACO24, CCF-A, 一作*"
-  - name: "Rearchitecting Buffered I/O in the Era of High-Bandwidth SSDs\\"
-    huanhang: 
-    url:
-    info: (存储I/O栈优化与高性能存储)
-    publisher: "*FAST26, CCF-A, 一作*"
   - name: "RomeFS: A CXL-SSD Aware File System Exploiting Synergy of Memory-Block Dual Paths"
     huanhang: 
     url: https://dl.acm.org/doi/10.1145/3698038.3698539
-    info: (CXL互连技术与新型文件系统, *首个基于CXL-SSD的文件系统*)
+    info: (CXL互连技术与新型文件系统, *首篇基于CXL-SSD的文件系统论文*)
     publisher: "*SoCC24, CCF-B, 一作*"
   - name: "HBtree: A Heterogeneous B+ tree with Multi-granularity for Hybrid NVM-SSD Storage"
     huanhang: 
@@ -270,10 +288,36 @@ projects:
         url: 
         short: 
         suffix: 
-      - prefix: "*已有成果*：文件系统代码已开源：https://github.com/YekangZhan/OrchFS。论文已发表在FAST25。"
+      - prefix: "*已有成果*：文件系统代码已开源：https://github.com/YekangZhan/OrchFS，约17000行。论文已发表在FAST25。"
         url:
         short:
         suffix:
+
+  - name: "WSBuffer：利用高带宽存储性能强化内核文件系统buffered I/O访问模式 (国家重点研发计划No.2024YFB4505105)"
+    url: 
+    repo: 
+    highlights:
+      - prefix: "*最小化缓存的高效数据访问机制*：引入了一种新的内存页结构scrap-page。在写路径上使用scrap-page去自适应地部分缓冲用户写入，并主动利用SSDs的高带宽来直接处理前台的用户写入，从而让buffered I/O能够直接受益于SSD带宽。与此同时将page cache从繁琐的写处理中解放出来，使其专注于所擅长的读处理，从而让buffered I/O的读取更加高效。"
+        url: 
+        short: 
+        suffix:
+      - prefix: "*机会主义的两阶段dirty-page flushing*：动态地选择负载较低的SSD执行脏页下刷，在第一阶段执行大读去填充未满的scrap-page，在第二阶段执行大写去将已满的scrap-page写回SSDs。两阶段的操作能够以页粒度并行执行。"
+        url: 
+        short: 
+        suffix: 
+      - prefix: "*并发的页管理机制*：针对传统page cache中自由页插入，干净页删除，和脏页状态维护等操作导致的高锁竞争开销问题，引入了一种并发页管理机制去分别管理page cache和WSBuffer，显著减少锁竞争。"
+        url: 
+        short: 
+        suffix: 
+      - prefix: "*实验效果*：比起SOTA和相关的产品级文件系统，该系统实现了至多3.91倍的吞吐量提升和82.80倍的延迟改善，并在图计算和HPC应用程序中节省了至多99.66%的内存使用。"
+        url:
+        short:
+        suffix:
+      - prefix: "*已有成果*：在Linux kernel 6.8的XFS中实现了WSBuffer架构，核心代码量超4000行。论文已发表在FAST26。"
+        url:
+        short:
+        suffix:
+
   - name: "RomeFS: 基于CXL-SSD独特双路访问特性的新型文件系统架构 (国家自然科学基金No.62172175)"
     url: 
     repo: 
@@ -295,34 +339,6 @@ projects:
         short:
         suffix:
 
-  - name: "WSBuffer：利用高带宽存储性能强化buffered I/O访问模式性能 (国家重点研发计划No.2024YFB4505105)"
-    url: 
-    repo: 
-    highlights:
-      - prefix: "*最小化缓存的高效数据访问机制*：使用memory去部分地缓存对SSD不友好的写入，并将对SSD友好的写入直接发送到SSDs去主动利用SSD带宽，并让page cache专用于执行高效的读处理，与此同时实现了一种低成本的数据一致性机制。"
-        url: 
-        short: 
-        suffix:
-      - prefix: "*机会主义的两阶段 dirty-page flushing*：在第一阶段执行大型读取去填充未满的WSBuffer页面，在第二阶段执行大型写入去将已满的WSBuffer页面写回SSD，并实现了高可扩展性的基于SSD带宽感知的机会性 page flushing。"
-        url: 
-        short: 
-        suffix: 
-      - prefix: "*并发的页管理机制*：针对传统page cache中自由页插入，干净页删除，和脏页状态维护等操作导致的高锁竞争开销问题，引入了一种并发页管理机制去分别管理page cache和WSBuffer，显著减少了锁竞争。"
-        url: 
-        short: 
-        suffix: 
-      - prefix: "*实验效果*：比起 SOTA和相关的产品级文件系统，该文件系统在4KB小I/O上实现了至多82.80倍的性能提升；在4MB的大I/O上实现了至多3.89倍的性能提升, 并节省了91.1%的内存使用。在高内存压力下，实现了至多2.16倍的性能提升。"
-        url:
-        short:
-        suffix:
-      - prefix: "*当前进展*：已在Linux 6.8的XFS中实现了WSBuffer架构，核心代码量超5000行，已投稿FAST26，计划开源。"
-        url:
-        short:
-        suffix:
-      # - prefix: 在此期间熟悉了Linux 内核文件系统开发与性能调优，了解了内核多线程与并发锁竞争。
-      #   url:
-      #   short:
-      #   suffix:
       
   - name: "AIS：一种最大化固态硬盘内部缓存恢复的主动空闲调度器 (国家自然科学基金No.61821003)"
     url: 
@@ -349,39 +365,39 @@ projects:
       #   short:
       #   suffix:
 
-  - name: "ZB级海量冷数据存储架构及高效存储管理系统（国家重点研发计划No.2024YFB4505105）"
-    url: 
-    repo: 
-    highlights: 
-      - prefix: "*面向ZB级海量冷数据的存储系统架构*：面向海量冷数据场景，设计了一种跨DRAM-SSD-HDD-光盘的多层数据存储架构。该架构支持高效的海量数据批量归集与重建，并具备高能效性。"
-        url:
-        short:
-        suffix:
-      - prefix: "*批量文件处理机制*：针对大量小文件归档时昂贵的小型随机元数据I/O问题，设计了并行批量文件处理机制，绕过慢速的标准POSIX串行接口，引入一种并行访问接口来批量处理元数据和文件数据，用于批量文件管理与迁移。"
-        url: 
-        short: 
-        suffix: 
-      - prefix: "*快速的文件归集重建机制*：面向大规模存储系统归集与重建场景，在批量文件处理机制的基础上，扫描具备新型数据布局格式的光盘上的元数据区域和相应的重建提示信息来一次性重建整个目录树和相应的文件索引。"
-        url:
-        short:
-        suffix:
+  # - name: "ZB级海量冷数据存储架构及高效存储管理系统（国家重点研发计划No.2024YFB4505105）"
+  #   url: 
+  #   repo: 
+  #   highlights: 
+  #     - prefix: "*面向ZB级海量冷数据的存储系统架构*：面向海量冷数据场景，设计了一种跨DRAM-SSD-HDD-光盘的多层数据存储架构。该架构支持高效的海量数据批量归集与重建，并具备高能效性。"
+  #       url:
+  #       short:
+  #       suffix:
+  #     - prefix: "*批量文件处理机制*：针对大量小文件归档时昂贵的小型随机元数据I/O问题，设计了并行批量文件处理机制，绕过慢速的标准POSIX串行接口，引入一种并行访问接口来批量处理元数据和文件数据，用于批量文件管理与迁移。"
+  #       url: 
+  #       short: 
+  #       suffix: 
+  #     - prefix: "*快速的文件归集重建机制*：面向大规模存储系统归集与重建场景，在批量文件处理机制的基础上，扫描具备新型数据布局格式的光盘上的元数据区域和相应的重建提示信息来一次性重建整个目录树和相应的文件索引。"
+  #       url:
+  #       short:
+  #       suffix:
 
-skills:
-  - category: 挖掘高带宽SSD对存储系统带来的变革与机会
-    prefix: ""
-    short: 
-    url: //
-    suffix: ""
-  - category: 探索新型存储器如何强化现有存储系统
-    prefix: ""
-    short: 
-    url: //
-    suffix: ""
-  - category: 新型互连协议与相关存储设备
-    prefix: ""
-    short: 
-    url: //
-    suffix: ""
+# skills:
+#   - category: 挖掘高带宽SSD对存储系统带来的变革与机会
+#     prefix: ""
+#     short: 
+#     url: //
+#     suffix: ""
+#   - category: 探索新型存储器如何强化现有存储系统
+#     prefix: ""
+#     short: 
+#     url: //
+#     suffix: ""
+#   - category: 新型互连协议与相关存储设备
+#     prefix: ""
+#     short: 
+#     url: //
+#     suffix: ""
 
 
  

@@ -50,22 +50,22 @@
 
 #cvheading(cvdata, uservars)
 #cveducation(cvdata)
-#v(0.2em)
+#v(0.25em)
 
 #cvwork(cvdata)
-#v(0.2em)
+#v(0.25em)
 #cvpublications(cvdata)
-#v(0.2em)
+#v(0.25em)
 // #cvaffiliations(cvdata)
 #cvprojects(cvdata)
-#v(0.2em)
+#v(0.25em)
 // #cvcertificates(cvdata)
 
 #cvawards(cvdata)
-#v(0.2em)
+#v(0.25em)
 
-#cvRES(cvdata)
-#v(0.2em)
+//#cvRES(cvdata)
+//#v(0.2em)
 
 //#cvskills(cvdata)
 //#v(0.5em)
